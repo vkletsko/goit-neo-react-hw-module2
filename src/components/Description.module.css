@@ -1,0 +1,14 @@
+.jumbotron {
+  max-width: 32rem;
+  padding: 2rem 4rem;
+  backdrop-filter: blur(0.25rem);
+  border-radius: var(--radius-base);
+  text-align: center;
+}
+.title {
+  font-size: var(--font-lg);
+  margin-bottom: 2rem;
+}
+.desc {
+  font-size: var(--font-sm);
+}

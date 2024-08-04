@@ -1,0 +1,39 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  max-width: 32rem;
+  padding: 2rem 4rem;
+  backdrop-filter: blur(0.25rem);
+  border-radius: var(--radius-base);
+}
+
+.btn {
+  padding: 0.5rem 1.75rem;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid rgb(var(--cl-accent));
+  border-radius: var(--radius-sm);
+  transition: var(--trns);
+
+  &:hover,
+  &:focus {
+    background-color: rgb(var(--cl-accent));
+  }
+}
+
+.reset {
+  composes: btn;
+
+  color: rgb(var(--cl-error));
+  border-color: rgb(var(--cl-white));
+
+  &:hover,
+  &:focus {
+    background-color: rgb(var(--cl-white));
+  }
+}
